@@ -1,0 +1,15 @@
+h1{
+    color: blue;
+}
+.link{
+    font-size: 40px;
+   font-family: cursive;
+}
+marquee{
+font-size: 20px;
+color: gold;
+font-family: 'Arial', sans-serif;
+}
+html{
+    background-image: url(indian-dance-dancing.gif)
+ }
