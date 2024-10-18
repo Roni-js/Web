@@ -13,3 +13,9 @@ font-family: 'Arial', sans-serif;
 html{
     background-image: url(indian-dance-dancing.gif)
  }
+ b{
+    background-color: black;
+    color: aqua;
+    padding: 3px;
+    
+ }
