@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Good!</title>
-    <link rel="stylesheet" href="background.css">
+
    <br><br>
      <center> <h1 class="site-header__title" data-lead-id="site-header-title">
         Sign Up kya tera Baap karega ?</center>
@@ -14,11 +14,37 @@
     <div class="main-content">
       <i class="fa fa-check main-content__checkmark" id="checkmark"></i>
     </div>
-    <center><img src="https://media.tenor.com/0rcY454tFbwAAAAM/ihatepeoplesomuch-stupidfartdumbshit.gif" alt="image"></center>
+    <center>
+      <img id="imageSwitch" src="https://media.tenor.com/0rcY454tFbwAAAAM/ihatepeoplesomuch-stupidfartdumbshit.gif" alt="image">
+  </center>
+  <script>
+    // Replace the image after 3 seconds
+    setTimeout(function() {
+        document.getElementById('imageSwitch').src = 'https://media.tenor.com/M4EbdtZAVyAAAAAM/borat-dancing.gif';
+
+        // Show the pop-up message
+        alert('Gaana achha hai naa? To nachoo!');
+    }, 3000); // 3000ms = 3 seconds
+</script>
 <center><footer class="site-footer" id="footer"><br><br>
       <p class="site-footer__fineprint" id="fineprint">
-     <br><br>Copyright ©2024 By Roni <br>
+      <br><br>Copyright ©2024 By Roni <br>
        <a href="index.html">Home</a>
+
+       <audio id="myAudio" autoplay loop>
+        <source src="Bhura Dholak New Meme  Teri Chunariya Dil Le Gayi  Bhura Dholak  @dehatidancevideo..mp3" type="audio/ogg">
+        <source src="Bhura Dholak New Meme  Teri Chunariya Dil Le Gayi  Bhura Dholak  @dehatidancevideo..mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+      // Attempt to autoplay the audio after the page has loaded
+      window.addEventListener('load', function() {
+          const audio = document.getElementById('myAudio');
+          audio.play().catch(error => {
+              console.log('Autoplay prevented. User interaction is required:', error);
+          });
+      });
+  </script>
     </footer>
   </body>
 </html>
